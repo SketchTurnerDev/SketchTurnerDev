@@ -1,1 +1,1 @@
-![Superhero Progress Bar](./status.png)
+![SUPERHERO METER](./status.png)
