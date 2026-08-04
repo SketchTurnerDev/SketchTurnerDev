@@ -1,1 +1,1 @@
-![SUPERHERO METER](./status.png?v=1)
+![SUPERHERO METER](./status.png?)
