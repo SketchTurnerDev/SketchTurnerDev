@@ -1,0 +1,33 @@
+name: Update Superhero Progress Bar
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install pillow requests
+
+      - name: Generate Status Image
+        run: python generate.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add status.png
+          git commit -m "Auto-update superhero progress bar" || exit 0
+          git push
