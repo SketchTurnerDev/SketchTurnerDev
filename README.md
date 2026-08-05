@@ -21,4 +21,4 @@ I'm an InfoSec student from Russia with a passion for Python development, Linux 
 
 ![SUPERHERO METER](./status.png?)
 
-**Get in Touch:** `sketch.turner.developer@gmail.com`
+**Get in Touch:** ✉️ [sketch.turner.developer@gmail.com](mailto:sketch.turner.developer@gmail.com)
